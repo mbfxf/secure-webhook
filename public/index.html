@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Webhook Trigger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+    </div>
+    
+    <div class="container">
+        <div class="glass-card">
+            <header>
+                <div class="status-indicator"></div>
+                <h1>System Trigger</h1>
+                <p>Securely initiate the automated workflow</p>
+            </header>
+
+            <div class="action-area">
+                <button id="triggerBtn" class="premium-btn">
+                    <span class="btn-text">Initiate Sequence</span>
+                    <span class="btn-shimmer"></span>
+                </button>
+            </div>
+
+            <div id="responseArea" class="response-container hidden">
+                <div class="response-header">
+                    <span class="response-label">Response Log</span>
+                    <span id="timestamp" class="timestamp"></span>
+                </div>
+                <pre id="responseContent"></pre>
+            </div>
+            
+            <div id="loadingIndicator" class="loading hidden">
+                <div class="spinner"></div>
+                <span>Processing request...</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
